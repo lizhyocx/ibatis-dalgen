@@ -1,0 +1,391 @@
+2014-11-12 13:47:40,050 LOGGER INFO  [] - **********************************
+2014-11-12 13:47:40,054 LOGGER INFO  [] - * 开始启动dalgen任务 *
+2014-11-12 13:47:40,054 LOGGER INFO  [] - * middlegen.MiddlegenTask *
+2014-11-12 13:47:40,054 LOGGER INFO  [] - **********************************
+2014-11-12 13:47:40,122 LOGGER INFO  [] - 系统启动，注册[IWalletPlugin]插件...
+2014-11-12 13:47:40,166 LOGGER INFO  [] - 注册插件： iwallet->middlegen.plugins.iwallet.IWalletPlugin
+2014-11-12 13:47:40,219 LOGGER INFO  [] - 任务创建动态节点：iwallet
+2014-11-12 13:47:40,400 LOGGER INFO  [] - 开始执行dalgen任务：middlegen.MiddlegenTask
+2014-11-12 13:47:40,926 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:40,926 LOGGER INFO  [] - 系统参数，KEY[output.encoding], Value[UTF-8].
+2014-11-12 13:47:40,926 LOGGER INFO  [] - 系统参数，KEY[jdbc.user], Value[lucy].
+2014-11-12 13:47:40,926 LOGGER INFO  [] - 系统参数，KEY[app.dbtype], Value[mysql].
+2014-11-12 13:47:40,926 LOGGER INFO  [] - 系统参数，KEY[target.project.path], Value[d:/CodeGIT/atom-jeesitD].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[app.name], Value[jeesite].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[jdbc.passwd], Value[lucy].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[dependency.lib.path], Value[${user.home}/atom-dalgen/libs].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package], Value[com.github.obullxl.jeesite].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[input.encoding], Value[UTF-8].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package.dir], Value[com/github/obullxl/jeesite].
+2014-11-12 13:47:40,927 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-12 13:47:40,928 LOGGER INFO  [] - 系统参数，KEY[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-12 13:47:40,928 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-12 13:47:40,928 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-12 13:47:40,981 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[null].
+2014-11-12 13:47:40,981 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[].
+2014-11-12 13:47:40,981 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.catalog], Value[null].
+2014-11-12 13:47:40,981 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[sort.columns], Value[null].
+2014-11-12 13:47:41,074 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-12 13:47:41,074 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-12 13:47:41,074 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.user], Value[lucy].
+2014-11-12 13:47:41,075 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.passwd], Value[lucy].
+2014-11-12 13:47:41,523 LOGGER INFO  [] - databaseProductName= MySQL
+2014-11-12 13:47:41,523 LOGGER INFO  [] - databaseProductVersion= 5.1.56-log
+2014-11-12 13:47:41,523 LOGGER INFO  [] - driverName= MySQL-AB JDBC Driver
+2014-11-12 13:47:41,523 LOGGER INFO  [] - driverVersion= mysql-connector-java-5.1.16 ( Revision: ${bzr.revision-id} )
+2014-11-12 13:47:41,523 LOGGER INFO  [] - schema= 
+2014-11-12 13:47:41,523 LOGGER INFO  [] - catalog= null
+2014-11-12 13:47:41,524 LOGGER INFO  [] - 验证插件：iwallet
+2014-11-12 13:47:41,585 LOGGER INFO  [] - -- tables --
+2014-11-12 13:47:41,628 LOGGER INFO  [] - -------setColumns(tts_product)
+2014-11-12 13:47:41,636 LOGGER INFO  [] - primary key:id
+2014-11-12 13:47:41,645 LOGGER INFO  [] - index:id
+2014-11-12 13:47:41,646 LOGGER INFO  [] - unique:id (PRIMARY)
+2014-11-12 13:47:41,646 LOGGER INFO  [] - index:pid
+2014-11-12 13:47:41,646 LOGGER INFO  [] - unique:pid (Index_pid)
+2014-11-12 13:47:41,646 LOGGER INFO  [] - index:price
+2014-11-12 13:47:41,646 LOGGER INFO  [] - index:sales
+2014-11-12 13:47:41,646 LOGGER INFO  [] - index:modify_time
+2014-11-12 13:47:41,646 LOGGER INFO  [] - index:online_time
+2014-11-12 13:47:41,664 LOGGER INFO  [] - unique column:id
+2014-11-12 13:47:41,673 LOGGER INFO  [] - unique column:pid
+2014-11-12 13:47:43,094 LOGGER INFO  [] - singularise:TtsProduct
+2014-11-12 13:47:43,094 LOGGER INFO  [] - singularised TtsProduct to TtsProduct
+2014-11-12 13:47:43,095 LOGGER INFO  [] - 执行插件生成代码：iwallet
+2014-11-12 13:47:43,261 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,261 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,266 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,266 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,266 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,266 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,267 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,267 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,267 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,268 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,268 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,269 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,270 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,271 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,272 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-12 13:47:43,272 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-12 13:47:43,272 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-12 13:47:43,272 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-12 13:47:43,638 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\model\TtsProductDto.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/do.vm
+2014-11-12 13:47:43,750 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\model\TtsProductDto.java], 覆盖标志[false].
+2014-11-12 13:47:43,758 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:43,758 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-12 13:47:43,758 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\model\TtsProductDto.java]-FKey[NOW()]-FValue[null].
+2014-11-12 13:47:43,759 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-12 13:47:43,759 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:43,759 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\model\TtsProductDto.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-12 13:47:43,761 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\model\TtsProductDto.java]已经存在, 忽略生成.
+2014-11-12 13:47:43,763 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\TtsProductDao.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/dao.vm
+2014-11-12 13:47:43,787 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,787 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,789 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,790 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,790 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,790 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,793 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,793 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,793 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,794 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,796 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,800 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,800 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,803 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,803 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,803 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,804 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,807 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,807 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,809 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,809 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,809 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,809 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,812 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,813 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,816 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,816 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,822 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,822 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,822 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,823 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,823 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,823 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,825 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,825 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,825 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,825 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,826 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,829 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,829 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,834 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,834 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,834 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,834 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,844 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,844 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,846 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,847 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,847 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,847 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,850 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,850 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,853 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,853 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,853 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,853 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,856 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,856 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,858 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:43,859 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:43,859 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\TtsProductDao.java], 覆盖标志[false].
+2014-11-12 13:47:43,861 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:43,861 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-12 13:47:43,861 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\TtsProductDao.java]-FKey[NOW()]-FValue[null].
+2014-11-12 13:47:43,861 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-12 13:47:43,861 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:43,861 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\TtsProductDao.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-12 13:47:43,863 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\TtsProductDao.java]已经存在, 忽略生成.
+2014-11-12 13:47:43,865 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\sqlMapConfig.xml using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/sqlmap.vm
+2014-11-12 13:47:43,868 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\sqlMapConfig.xml], 覆盖标志[false].
+2014-11-12 13:47:43,870 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:43,871 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-12 13:47:43,871 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\sqlMapConfig.xml]-FKey[NOW()]-FValue[null].
+2014-11-12 13:47:43,871 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-12 13:47:43,871 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:43,871 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\sqlMapConfig.xml]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-12 13:47:43,873 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\sqlMapConfig.xml]已经存在, 忽略生成.
+2014-11-12 13:47:43,875 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\impl\TtsProductDaoImpl.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/daoImpl.vm
+2014-11-12 13:47:44,007 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,007 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,009 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,009 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,009 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,009 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,011 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,011 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,011 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,011 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,012 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,012 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,014 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,014 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,014 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,014 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,023 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,023 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,023 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,024 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,024 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,024 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,024 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,024 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,053 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,053 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,055 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,056 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,056 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,056 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,059 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,060 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,063 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,064 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,065 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,065 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,071 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,072 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,072 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,072 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,075 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,075 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,077 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,078 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,078 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,078 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,084 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,084 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,084 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,084 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,087 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,087 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,089 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,089 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,122 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,123 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,125 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,125 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,125 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,125 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,125 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,125 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,128 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,132 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,132 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,133 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,136 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,137 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,139 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,139 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,139 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,139 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,145 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,145 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,145 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,145 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,158 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,158 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,160 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,160 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,160 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,160 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,213 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,213 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,213 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,213 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,216 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,216 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,218 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,218 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,218 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,218 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,222 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,222 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,222 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,222 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,222 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,222 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,238 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,238 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,241 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,241 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,279 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,279 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,280 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\impl\TtsProductDaoImpl.java], 覆盖标志[false].
+2014-11-12 13:47:44,281 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:44,282 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-12 13:47:44,282 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\impl\TtsProductDaoImpl.java]-FKey[NOW()]-FValue[null].
+2014-11-12 13:47:44,282 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-12 13:47:44,282 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:44,282 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\impl\TtsProductDaoImpl.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-12 13:47:44,284 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\test\dao\impl\TtsProductDaoImpl.java]已经存在, 忽略生成.
+2014-11-12 13:47:44,286 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsProduct-sqlmap-mapping.xml using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/table-sqlmap-mapping.vm
+2014-11-12 13:47:44,351 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,351 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,352 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,353 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,353 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,354 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,354 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,354 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,354 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,355 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,356 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,356 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,356 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,356 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,357 LOGGER INFO  [] - singularise:ttsProduct
+2014-11-12 13:47:44,357 LOGGER INFO  [] - singularised ttsProduct to ttsProduct
+2014-11-12 13:47:44,358 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsProduct-sqlmap-mapping.xml], 覆盖标志[false].
+2014-11-12 13:47:44,360 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:44,360 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-12 13:47:44,360 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsProduct-sqlmap-mapping.xml]-FKey[NOW()]-FValue[null].
+2014-11-12 13:47:44,360 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-12 13:47:44,360 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-12 13:47:44,360 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsProduct-sqlmap-mapping.xml]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-12 13:47:44,363 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsProduct-sqlmap-mapping.xml]已经存在, 忽略生成.
+2014-11-12 13:47:44,365 LOGGER INFO  [] - dalgen任务执行完成, 耗时[3965]ms.
