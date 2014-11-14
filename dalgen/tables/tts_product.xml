@@ -2,11 +2,22 @@
 <table sqlname="tts_product">
 
 
+ 	<resultMap name="RM-TTS-PRODUCT_TEST" >
+        <column name="id" javaType="java.lang.Long" />
+        <column name="pid" javaType="java.lang.Long" />
+        <column name="source_id" javaType="java.lang.Long" />
+        <column name="cid" javaType="java.lang.Integer" />
+        <column name="website" javaType="java.lang.Integer" />
+        <column name="is_index" javaType="java.lang.Integer" />
+        <column name="online_time" javaType="java.util.Date" />
+    </resultMap>
+
+
 	<sql id="fieldTitle">
-		*
+		id,pid,sourceId,cid,website,isIndex,onlineTime
 	</sql>
 
-	<operation name="getTest">
+	<operation name="getTest" resultMap="RM-TTS-PRODUCT_TEST">
 		<description>查询所有记录</description>
 		<sql>
 			SELECT * FROM tts_product
@@ -174,20 +185,21 @@
 		<param name="tagId" javatype="java.lang.String"></param>
 	</extraparams>
 	<sql>
-				SELECT
+		SELECT
 		t.id,t.pid,t.source_id,t.cid,t.website,t.is_index,t.is_mobile_top,t.order_id,t.price,t.sales,t.create_time,t.modify_time,t.publish_user_id,t.modify_user_id,t.is_deleted,t.leaf_cate_id ,t.is_mobile_display,t.online_time,t.description,t.url from tts_product t
 
 
 	</sql>
 	<sqlmap>
-					SELECT
+		SELECT
 		t.id,t.pid,t.source_id,t.cid,t.website,t.is_index,t.is_mobile_top,t.order_id,t.price,t.sales,t.create_time,t.modify_time,t.publish_user_id,t.modify_user_id,t.is_deleted,t.leaf_cate_id ,t.is_mobile_display,t.online_time,t.description,t.url from tts_product t
 		LEFT JOIN tts_product_tag tc on t.id = tc.tts_product_id
 		where tc.tag_id =#tagId#
-		limit ##
 	</sqlmap>
 
 	
 	</operation>
+	
+
 	
 </table>

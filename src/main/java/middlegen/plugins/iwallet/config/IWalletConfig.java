@@ -147,15 +147,15 @@ public class IWalletConfig {
                 digester.addSetNext("table/column", "addColumn");
 
                 // parse resultmap
-                digester.addObjectCreate("table/resultmap", IWalletResultMapConfig.class);
-                digester.addSetProperties("table/resultmap", "name", "name");
-                digester.addSetProperties("table/resultmap", "type", "type");
-                digester.addSetNext("table/resultmap", "addResultMap");
+                digester.addObjectCreate("table/resultMap", IWalletResultMapConfig.class);
+                digester.addSetProperties("table/resultMap", "name", "name");
+                digester.addSetProperties("table/resultMap", "type", "type");
+                digester.addSetNext("table/resultMap", "addResultMap");
                 // parse resultmap column
-                digester.addObjectCreate("table/resultmap/column", IWalletColumnConfig.class);
-                digester.addSetProperties("table/resultmap/column", "name", "name");
-                digester.addSetProperties("table/resultmap/column", "javatype", "javaType");
-                digester.addSetNext("table/resultmap/column", "addColumn");
+                digester.addObjectCreate("table/resultMap/column", IWalletColumnConfig.class);
+                digester.addSetProperties("table/resultMap/column", "name", "name");
+                digester.addSetProperties("table/resultMap/column", "javatype", "javaType");
+                digester.addSetNext("table/resultMap/column", "addColumn");
 
                 // parse sql
                 digester.addObjectCreate("table/sql", IWalletSqlConfig.class);
