@@ -1,4 +1,4 @@
-atom-dalgen
+ibatis-dalgen
 ===========
 
-A java code DAO generator for MyBatis.
+A java code DAO generator for Ibatis.
