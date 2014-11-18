@@ -2527,3 +2527,408 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
 2014-11-18 16:25:50,564 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[{{DB_NOW}}]-FValue[NOW()].
 2014-11-18 16:25:50,567 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]已经存在, 忽略生成.
 2014-11-18 16:25:50,570 LOGGER INFO  [] - dalgen任务执行完成, 耗时[48559]ms.
+2014-11-18 16:37:00,474 LOGGER INFO  [] - **********************************
+2014-11-18 16:37:00,501 LOGGER INFO  [] - * 开始启动dalgen任务 *
+2014-11-18 16:37:00,502 LOGGER INFO  [] - * middlegen.MiddlegenTask *
+2014-11-18 16:37:00,502 LOGGER INFO  [] - **********************************
+2014-11-18 16:37:00,531 LOGGER INFO  [] - 系统启动，注册[IWalletPlugin]插件...
+2014-11-18 16:37:00,564 LOGGER INFO  [] - 注册插件： iwallet->middlegen.plugins.iwallet.IWalletPlugin
+2014-11-18 16:37:00,578 LOGGER INFO  [] - 任务创建动态节点：iwallet
+2014-11-18 16:37:00,752 LOGGER INFO  [] - 开始执行dalgen任务：middlegen.MiddlegenTask
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[output.encoding], Value[UTF-8].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[jdbc.user], Value[lucy].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[app.dbtype], Value[mysql].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[target.project.path], Value[d:/CodeGIT/atom-jeesitD].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[app.name], Value[jeesite].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[jdbc.passwd], Value[lucy].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[dependency.lib.path], Value[${user.home}/atom-dalgen/libs].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package], Value[com.github.obullxl.jeesite].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[input.encoding], Value[UTF-8].
+2014-11-18 16:37:02,051 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package.dir], Value[com/github/obullxl/jeesite].
+2014-11-18 16:37:02,052 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:37:02,052 LOGGER INFO  [] - 系统参数，KEY[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-18 16:37:02,052 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-18 16:37:02,052 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-18 16:37:02,117 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[null].
+2014-11-18 16:37:02,117 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[].
+2014-11-18 16:37:02,117 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.catalog], Value[null].
+2014-11-18 16:37:02,117 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[sort.columns], Value[null].
+2014-11-18 16:37:02,258 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-18 16:37:02,259 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-18 16:37:02,259 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.user], Value[lucy].
+2014-11-18 16:37:02,259 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.passwd], Value[lucy].
+2014-11-18 16:37:12,820 LOGGER INFO  [] - databaseProductName= MySQL
+2014-11-18 16:37:12,820 LOGGER INFO  [] - databaseProductVersion= 5.1.56-log
+2014-11-18 16:37:12,824 LOGGER INFO  [] - driverName= MySQL-AB JDBC Driver
+2014-11-18 16:37:12,824 LOGGER INFO  [] - driverVersion= mysql-connector-java-5.1.16 ( Revision: ${bzr.revision-id} )
+2014-11-18 16:37:12,824 LOGGER INFO  [] - schema= 
+2014-11-18 16:37:12,824 LOGGER INFO  [] - catalog= null
+2014-11-18 16:37:12,824 LOGGER INFO  [] - 验证插件：iwallet
+2014-11-18 16:37:12,838 LOGGER INFO  [] - -- tables --
+2014-11-18 16:37:12,928 LOGGER INFO  [] - -------setColumns(tts_meizhuang)
+2014-11-18 16:37:12,946 LOGGER INFO  [] - primary key:id
+2014-11-18 16:37:12,950 LOGGER INFO  [] - index:id
+2014-11-18 16:37:12,951 LOGGER INFO  [] - unique:id (PRIMARY)
+2014-11-18 16:37:12,975 LOGGER INFO  [] - unique column:id
+2014-11-18 16:37:14,701 LOGGER INFO  [] - singularise:TtsProductCheck
+2014-11-18 16:37:14,701 LOGGER INFO  [] - singularised TtsProductCheck to TtsProductCheck
+2014-11-18 16:37:14,701 LOGGER INFO  [] - singularise:TtsProduct
+2014-11-18 16:37:14,701 LOGGER INFO  [] - singularised TtsProduct to TtsProduct
+2014-11-18 16:37:14,701 LOGGER INFO  [] - singularise:TtsMeizhuang
+2014-11-18 16:37:14,701 LOGGER INFO  [] - singularised TtsMeizhuang to TtsMeizhuang
+2014-11-18 16:37:14,703 LOGGER INFO  [] - 执行插件生成代码：iwallet
+2014-11-18 16:37:14,746 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:14,746 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:14,772 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:14,772 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:14,772 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:14,773 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:14,773 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-18 16:37:14,773 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-18 16:37:14,773 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-18 16:37:14,773 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-18 16:37:15,296 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/do.vm
+2014-11-18 16:37:15,384 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java], 覆盖标志[false].
+2014-11-18 16:37:15,415 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,415 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:37:15,416 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:37:15,416 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:37:15,416 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,416 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:37:15,420 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]已经存在, 忽略生成.
+2014-11-18 16:37:15,422 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/dao.vm
+2014-11-18 16:37:15,432 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,432 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,438 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,438 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,475 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,475 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,497 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,500 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,509 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,510 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,510 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java], 覆盖标志[false].
+2014-11-18 16:37:15,513 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,514 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:37:15,514 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:37:15,515 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:37:15,515 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,529 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:37:15,531 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]已经存在, 忽略生成.
+2014-11-18 16:37:15,540 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/daoImpl.vm
+2014-11-18 16:37:15,561 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[null].
+2014-11-18 16:37:15,561 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[com.taotaosou.foundation.base.data.BaseDao1].
+2014-11-18 16:37:15,561 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[null].
+2014-11-18 16:37:15,561 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[com.taotaosou.foundation.base.data.BaseDao1].
+2014-11-18 16:37:15,569 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,569 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,572 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,572 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,656 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,656 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,656 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,656 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,660 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,661 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,665 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,665 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,665 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,665 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,672 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,672 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,672 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,672 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,673 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java], 覆盖标志[false].
+2014-11-18 16:37:15,675 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,675 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:37:15,675 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:37:15,675 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:37:15,675 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,675 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:37:15,676 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]已经存在, 忽略生成.
+2014-11-18 16:37:15,678 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/table-sqlmap-mapping.vm
+2014-11-18 16:37:15,732 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,733 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,734 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:37:15,734 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:37:15,735 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml], 覆盖标志[false].
+2014-11-18 16:37:15,737 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,737 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:37:15,737 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[NOW()]-FValue[null].
+2014-11-18 16:37:15,737 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:37:15,737 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:37:15,737 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:37:15,740 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]已经存在, 忽略生成.
+2014-11-18 16:37:15,743 LOGGER INFO  [] - dalgen任务执行完成, 耗时[14991]ms.
+2014-11-18 16:38:22,407 LOGGER INFO  [] - **********************************
+2014-11-18 16:38:22,412 LOGGER INFO  [] - * 开始启动dalgen任务 *
+2014-11-18 16:38:22,412 LOGGER INFO  [] - * middlegen.MiddlegenTask *
+2014-11-18 16:38:22,412 LOGGER INFO  [] - **********************************
+2014-11-18 16:38:22,414 LOGGER INFO  [] - 系统启动，注册[IWalletPlugin]插件...
+2014-11-18 16:38:22,418 LOGGER INFO  [] - 注册插件： iwallet->middlegen.plugins.iwallet.IWalletPlugin
+2014-11-18 16:38:22,421 LOGGER INFO  [] - 任务创建动态节点：iwallet
+2014-11-18 16:38:22,442 LOGGER INFO  [] - 开始执行dalgen任务：middlegen.MiddlegenTask
+2014-11-18 16:38:22,681 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:22,681 LOGGER INFO  [] - 系统参数，KEY[output.encoding], Value[UTF-8].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[jdbc.user], Value[lucy].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[app.dbtype], Value[mysql].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[target.project.path], Value[d:/CodeGIT/atom-jeesitD].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[app.name], Value[jeesite].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[jdbc.passwd], Value[lucy].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[dependency.lib.path], Value[${user.home}/atom-dalgen/libs].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package], Value[com.github.obullxl.jeesite].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[input.encoding], Value[UTF-8].
+2014-11-18 16:38:22,682 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package.dir], Value[com/github/obullxl/jeesite].
+2014-11-18 16:38:22,683 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:38:22,683 LOGGER INFO  [] - 系统参数，KEY[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-18 16:38:22,683 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-18 16:38:22,683 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-18 16:38:22,688 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[null].
+2014-11-18 16:38:22,688 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[].
+2014-11-18 16:38:22,688 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.catalog], Value[null].
+2014-11-18 16:38:22,689 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[sort.columns], Value[null].
+2014-11-18 16:38:22,710 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-18 16:38:22,711 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-18 16:38:22,711 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.user], Value[lucy].
+2014-11-18 16:38:22,711 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.passwd], Value[lucy].
+2014-11-18 16:38:23,116 LOGGER INFO  [] - databaseProductName= MySQL
+2014-11-18 16:38:23,116 LOGGER INFO  [] - databaseProductVersion= 5.1.56-log
+2014-11-18 16:38:23,116 LOGGER INFO  [] - driverName= MySQL-AB JDBC Driver
+2014-11-18 16:38:23,116 LOGGER INFO  [] - driverVersion= mysql-connector-java-5.1.16 ( Revision: ${bzr.revision-id} )
+2014-11-18 16:38:23,116 LOGGER INFO  [] - schema= 
+2014-11-18 16:38:23,116 LOGGER INFO  [] - catalog= null
+2014-11-18 16:38:23,116 LOGGER INFO  [] - 验证插件：iwallet
+2014-11-18 16:38:23,118 LOGGER INFO  [] - -- tables --
+2014-11-18 16:38:23,142 LOGGER INFO  [] - -------setColumns(tts_meizhuang)
+2014-11-18 16:38:23,145 LOGGER INFO  [] - primary key:id
+2014-11-18 16:38:23,149 LOGGER INFO  [] - index:id
+2014-11-18 16:38:23,149 LOGGER INFO  [] - unique:id (PRIMARY)
+2014-11-18 16:38:23,163 LOGGER INFO  [] - unique column:id
+2014-11-18 16:38:24,488 LOGGER INFO  [] - singularise:TtsProductCheck
+2014-11-18 16:38:24,488 LOGGER INFO  [] - singularised TtsProductCheck to TtsProductCheck
+2014-11-18 16:38:24,489 LOGGER INFO  [] - singularise:TtsProduct
+2014-11-18 16:38:24,489 LOGGER INFO  [] - singularised TtsProduct to TtsProduct
+2014-11-18 16:38:24,489 LOGGER INFO  [] - singularise:TtsMeizhuang
+2014-11-18 16:38:24,489 LOGGER INFO  [] - singularised TtsMeizhuang to TtsMeizhuang
+2014-11-18 16:38:24,490 LOGGER INFO  [] - 执行插件生成代码：iwallet
+2014-11-18 16:38:24,497 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,497 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,502 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,503 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,504 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,504 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,504 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-18 16:38:24,504 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-18 16:38:24,504 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-18 16:38:24,504 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-18 16:38:24,856 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/do.vm
+2014-11-18 16:38:24,905 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java], 覆盖标志[false].
+2014-11-18 16:38:24,916 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:24,917 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:38:24,917 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:38:24,917 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:38:24,917 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:24,918 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:38:24,920 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]已经存在, 忽略生成.
+2014-11-18 16:38:24,923 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/dao.vm
+2014-11-18 16:38:24,935 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,936 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,942 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,944 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,951 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,952 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,954 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,954 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,955 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,955 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,956 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java], 覆盖标志[false].
+2014-11-18 16:38:24,959 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:24,960 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:38:24,960 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:38:24,960 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:38:24,960 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:24,960 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:38:24,963 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]已经存在, 忽略生成.
+2014-11-18 16:38:24,966 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/daoImpl.vm
+2014-11-18 16:38:24,969 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[null].
+2014-11-18 16:38:24,970 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[com.taotaosou.foundation.base.data.BaseDao1].
+2014-11-18 16:38:24,970 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[null].
+2014-11-18 16:38:24,970 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[com.taotaosou.foundation.base.data.BaseDao1].
+2014-11-18 16:38:24,977 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,978 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,981 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,982 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:24,998 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:24,998 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,000 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,000 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,004 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,004 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,008 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,008 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,009 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,009 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,016 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,016 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,016 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,017 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,018 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java], 覆盖标志[false].
+2014-11-18 16:38:25,020 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:25,021 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:38:25,021 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:38:25,021 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:38:25,021 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:25,021 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:38:25,025 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]已经存在, 忽略生成.
+2014-11-18 16:38:25,028 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/table-sqlmap-mapping.vm
+2014-11-18 16:38:25,038 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,039 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,040 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:38:25,040 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:38:25,041 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml], 覆盖标志[false].
+2014-11-18 16:38:25,044 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:25,044 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:38:25,044 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[NOW()]-FValue[null].
+2014-11-18 16:38:25,044 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:38:25,045 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:38:25,045 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:38:25,047 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]已经存在, 忽略生成.
+2014-11-18 16:38:25,050 LOGGER INFO  [] - dalgen任务执行完成, 耗时[2608]ms.
+2014-11-18 16:39:55,028 LOGGER INFO  [] - **********************************
+2014-11-18 16:39:55,034 LOGGER INFO  [] - * 开始启动dalgen任务 *
+2014-11-18 16:39:55,035 LOGGER INFO  [] - * middlegen.MiddlegenTask *
+2014-11-18 16:39:55,035 LOGGER INFO  [] - **********************************
+2014-11-18 16:39:55,037 LOGGER INFO  [] - 系统启动，注册[IWalletPlugin]插件...
+2014-11-18 16:39:55,040 LOGGER INFO  [] - 注册插件： iwallet->middlegen.plugins.iwallet.IWalletPlugin
+2014-11-18 16:39:55,043 LOGGER INFO  [] - 任务创建动态节点：iwallet
+2014-11-18 16:39:55,064 LOGGER INFO  [] - 开始执行dalgen任务：middlegen.MiddlegenTask
+2014-11-18 16:39:55,317 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[output.encoding], Value[UTF-8].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[jdbc.user], Value[lucy].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[app.dbtype], Value[mysql].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[target.project.path], Value[d:/CodeGIT/atom-jeesitD].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[app.name], Value[jeesite].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[jdbc.passwd], Value[lucy].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-18 16:39:55,318 LOGGER INFO  [] - 系统参数，KEY[dependency.lib.path], Value[${user.home}/atom-dalgen/libs].
+2014-11-18 16:39:55,319 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package], Value[com.github.obullxl.jeesite].
+2014-11-18 16:39:55,319 LOGGER INFO  [] - 系统参数，KEY[input.encoding], Value[UTF-8].
+2014-11-18 16:39:55,319 LOGGER INFO  [] - 系统参数，KEY[target.middlegen.package.dir], Value[com/github/obullxl/jeesite].
+2014-11-18 16:39:55,319 LOGGER INFO  [] - 系统参数，KEY[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:39:55,319 LOGGER INFO  [] - 系统参数，KEY[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-18 16:39:55,320 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-18 16:39:55,320 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[app.name], Value[jeesite].
+2014-11-18 16:39:55,324 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[null].
+2014-11-18 16:39:55,324 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.schema], Value[].
+2014-11-18 16:39:55,325 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.catalog], Value[null].
+2014-11-18 16:39:55,325 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[sort.columns], Value[null].
+2014-11-18 16:39:55,348 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.driver], Value[com.mysql.jdbc.Driver].
+2014-11-18 16:39:55,349 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.url], Value[jdbc:mysql://199.155.122.203:3306/taotaosou_com?characterEncoding=utf-8].
+2014-11-18 16:39:55,349 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.user], Value[lucy].
+2014-11-18 16:39:55,349 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[jdbc.passwd], Value[lucy].
+2014-11-18 16:39:55,712 LOGGER INFO  [] - databaseProductName= MySQL
+2014-11-18 16:39:55,712 LOGGER INFO  [] - databaseProductVersion= 5.1.56-log
+2014-11-18 16:39:55,712 LOGGER INFO  [] - driverName= MySQL-AB JDBC Driver
+2014-11-18 16:39:55,713 LOGGER INFO  [] - driverVersion= mysql-connector-java-5.1.16 ( Revision: ${bzr.revision-id} )
+2014-11-18 16:39:55,713 LOGGER INFO  [] - schema= 
+2014-11-18 16:39:55,713 LOGGER INFO  [] - catalog= null
+2014-11-18 16:39:55,713 LOGGER INFO  [] - 验证插件：iwallet
+2014-11-18 16:39:55,714 LOGGER INFO  [] - -- tables --
+2014-11-18 16:39:55,739 LOGGER INFO  [] - -------setColumns(tts_meizhuang)
+2014-11-18 16:39:55,742 LOGGER INFO  [] - primary key:id
+2014-11-18 16:39:55,747 LOGGER INFO  [] - index:id
+2014-11-18 16:39:55,747 LOGGER INFO  [] - unique:id (PRIMARY)
+2014-11-18 16:39:55,773 LOGGER INFO  [] - unique column:id
+2014-11-18 16:39:57,060 LOGGER INFO  [] - singularise:TtsProductCheck
+2014-11-18 16:39:57,060 LOGGER INFO  [] - singularised TtsProductCheck to TtsProductCheck
+2014-11-18 16:39:57,061 LOGGER INFO  [] - singularise:TtsProduct
+2014-11-18 16:39:57,061 LOGGER INFO  [] - singularised TtsProduct to TtsProduct
+2014-11-18 16:39:57,061 LOGGER INFO  [] - singularise:TtsMeizhuang
+2014-11-18 16:39:57,061 LOGGER INFO  [] - singularised TtsMeizhuang to TtsMeizhuang
+2014-11-18 16:39:57,062 LOGGER INFO  [] - 执行插件生成代码：iwallet
+2014-11-18 16:39:57,069 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,069 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,074 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,074 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,074 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,074 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,075 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-18 16:39:57,075 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[input.encoding], Value[UTF-8].
+2014-11-18 16:39:57,075 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-18 16:39:57,075 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[output.encoding], Value[UTF-8].
+2014-11-18 16:39:57,374 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/do.vm
+2014-11-18 16:39:57,417 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java], 覆盖标志[false].
+2014-11-18 16:39:57,427 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,428 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:39:57,429 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:39:57,429 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:39:57,429 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,429 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:39:57,434 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\model\TtsMeizhuangDto.java]已经存在, 忽略生成.
+2014-11-18 16:39:57,438 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/dao.vm
+2014-11-18 16:39:57,449 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,449 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,456 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,457 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,463 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,464 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,466 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,467 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,467 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,468 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,468 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java], 覆盖标志[false].
+2014-11-18 16:39:57,471 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,471 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:39:57,471 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:39:57,471 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:39:57,471 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,472 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:39:57,473 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\TtsMeizhuangDao.java]已经存在, 忽略生成.
+2014-11-18 16:39:57,477 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/daoImpl.vm
+2014-11-18 16:39:57,482 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[null].
+2014-11-18 16:39:57,483 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[com.taotaosou.foundation.base.data.BaseDao1].
+2014-11-18 16:39:57,484 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[null].
+2014-11-18 16:39:57,484 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[baseDaoClass], Value[com.taotaosou.foundation.base.data.BaseDao1].
+2014-11-18 16:39:57,489 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,490 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,494 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,494 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,531 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,531 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,532 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,532 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,535 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,535 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,537 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,538 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,539 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,539 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,546 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,546 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,547 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,547 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,548 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java], 覆盖标志[false].
+2014-11-18 16:39:57,552 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,552 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:39:57,552 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]-FKey[NOW()]-FValue[null].
+2014-11-18 16:39:57,552 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:39:57,553 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,553 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:39:57,554 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\java\com\taotaosou\main\dao\impl\TtsMeizhuangDaoImpl.java]已经存在, 忽略生成.
+2014-11-18 16:39:57,557 LOGGER INFO  [] - Generating E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml using template from file:/E:/workspace/ibatis-dalgen/dalgen/templates/table-sqlmap-mapping.vm
+2014-11-18 16:39:57,568 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,568 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,569 LOGGER INFO  [] - singularise:ttsMeizhuang
+2014-11-18 16:39:57,569 LOGGER INFO  [] - singularised ttsMeizhuang to ttsMeizhuang
+2014-11-18 16:39:57,590 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml], 覆盖标志[false].
+2014-11-18 16:39:57,593 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,593 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value.value], Value[null].
+2014-11-18 16:39:57,593 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[NOW()]-FValue[null].
+2014-11-18 16:39:57,593 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key], Value[{{DB_NOW}}].
+2014-11-18 16:39:57,593 LOGGER INFO  [] - [系统参数]-查询系统参数, Key[filter.db_now_key.value], Value[NOW()].
+2014-11-18 16:39:57,594 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]-FKey[{{DB_NOW}}]-FValue[NOW()].
+2014-11-18 16:39:57,596 LOGGER INFO  [] - [文件生成]-文件[E:\workspace\ibatis-dalgen\dalgen\src\main\resources\ibatis\mapping\TtsMeizhuang.xml]已经存在, 忽略生成.
+2014-11-18 16:39:57,599 LOGGER INFO  [] - dalgen任务执行完成, 耗时[2535]ms.

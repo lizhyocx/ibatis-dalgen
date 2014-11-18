@@ -1,8 +1,8 @@
+#parse("copyright.vm")
 #set ($baseClass = ${table.baseDaoClass})
 
 #set ($base = ${table.baseDaoClassName})
 
-#parse("copyright.vm")
 package ${table.ibatisPackage};
 
 import ${baseClass};

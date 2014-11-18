@@ -43,7 +43,7 @@
 
 #end
 ## execute query and return
-#if (! ${operation.paging})
+
 #if (${operation.multiplicity} == "one")
 #if (${operation.returnTypePrimitive})
 	    ${operation.simpleReturnTypeForPrimitive} retObj = (${operation.simpleReturnTypeForPrimitive}) super.object(namespace+"${operation.mappedStatementId}", ${paramName});
@@ -60,22 +60,4 @@
         return (${operation.simpleReturnType}) super.list(namespace+"${operation.mappedStatementId}", ${paramName});
 #end
 
-#else
-        Paginator paginator = new Paginator();
-        paginator.setItemsPerPage(pageSize);
-        paginator.setPage(pageNum / pageSize + 1);
-
-        paginator.setItems(((Integer) getSqlMapClientTemplate().queryForObject(namespace+"${operation.mappedStatementIdForCount}", ${paramName})).intValue());
-        
-        PageList  pageList = new PageList();
-        pageList.setPaginator(paginator);
-        
-        if (paginator.getBeginIndex() <= paginator.getItems()) {
-            ${paramName}.put("${operation.startRowName}", new Integer(paginator.getBeginIndex()));
-            ${paramName}.put("${operation.endRowName}", new Integer(paginator.getEndIndex()));
-            pageList.addAll(getSqlMapClientTemplate().queryForList(namespace+"${operation.mappedStatementId}", ${paramName}));
-        }
-        
-        return pageList;
-#end
     }
