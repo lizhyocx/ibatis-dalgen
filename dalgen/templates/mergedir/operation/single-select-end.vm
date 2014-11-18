@@ -1,12 +1,7 @@
-##operation.getAllField������������Ƿ���select *��ʽ 
 #if(${operation.getAllField()} < 0)
-##operation.getField����С��0ʱ��˵����ѯ���ֶ�ֻ��һ��
 #if(${operation.getField()} < 0) 
-##������һ���ֶε�ʱ��Ҫ���Ǹ��ֶεķ���ֵ����
 #if (${operation.returnTypePrimitive})
-	 ##���õ���String���͵���ֵת�ɻ�����������Ӧ�������������
 ${operation.simpleReturnTypeForPrimitive} retObj = new ${operation.simpleReturnTypeForPrimitive}(finalStringValue);
-	 ##ת�ɻ��������
 	 return retObj.${operation.simpleReturnType}Value();
 		
 #else

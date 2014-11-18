@@ -1,7 +1,5 @@
-##��ݲ�ͬ�����Ⱦ����ֵ��������*�Ͷ��ѯ�ֶ�����
-#if(${operation.getAllField()} < 0) ##������select *��ʱ��
-#if(${operation.getField()} < 0)  ##����select XX from tableNameʱ
-        //�����ܺ���ֶη����ѯʱ���˱����Ե��ֶ�
+#if(${operation.getAllField()} < 0)
+#if(${operation.getField()} < 0) 
 	    temp.add(finalStringValue);
 		 }
 	    return temp;
