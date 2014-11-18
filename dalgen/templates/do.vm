@@ -1,6 +1,6 @@
 #parse("copyright.vm")
 package ${table.DOPackage};
-
+import java.io.Serializable;
 // auto generated imports
 #foreach($importClass in $table.doImports) 
 import $importClass;
@@ -11,7 +11,7 @@ import $importClass;
  *
 #parse("description-java.vm")
  */
-public class ${table.DOClassName} {
+public class ${table.DOClassName} implements Serializable{
     private static final long serialVersionUID = 741231858441822688L;
 
 #parse("do-fields.vm")

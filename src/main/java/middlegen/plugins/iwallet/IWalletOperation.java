@@ -33,7 +33,7 @@ import com.atom.dalgen.utils.LogUtils;
  * @version $Id: IWalletOperation.java,v 1.2 2005/05/25 06:09:15 lusu Exp $
  */
 public abstract class IWalletOperation extends PreferenceAware implements Operation {
-    public static final String       MAPPED_STATEMENT_PREFIX = "MS-";
+    public static final String       MAPPED_STATEMENT_PREFIX = "";
     public static final String       PARAM_TYPE_OBJECT       = "object";
     public static final String       PARAM_TYPE_PRIMITIVE    = "primitive";
     public static final String       MULTIPLICITY_ONE        = "one";
@@ -187,7 +187,7 @@ public abstract class IWalletOperation extends PreferenceAware implements Operat
     public List getExceptions() {
         List list = new ArrayList();
 
-        list.add(IWalletPlugin.DATA_ACCESS_EXCEPTION_CLASS);
+//        list.add(IWalletPlugin.DATA_ACCESS_EXCEPTION_CLASS);
 
         return list;
     }

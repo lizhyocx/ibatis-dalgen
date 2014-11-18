@@ -40,6 +40,7 @@ import Zql.ZInsert;
 import Zql.ZQuery;
 import Zql.ZUpdate;
 
+import com.atom.dalgen.utils.CfgUtils;
 import com.atom.dalgen.utils.LogUtils;
 
 /**
@@ -84,7 +85,7 @@ public class IWalletTable extends JavaTable implements Comparable {
     private Set<String>        ibatisImports     = new HashSet<String>();
 
     /** a list of all ibatis imports */
-    private Set<String>        myBatisImports    = new HashSet<String>();
+    private Set<String>        daoImplImports    = new HashSet<String>();
 
     /**
      * Constructor for IWalletTableDecorator.
@@ -151,6 +152,17 @@ public class IWalletTable extends JavaTable implements Comparable {
             return theName;
         }
     }
+    //---add by gaoll 
+    public String getBaseDaoClass(){
+        return CfgUtils.findValue("baseDaoClass", "com.taotaosou.foundation.base.data.BaseDao1");
+    }
+    
+    public String getBaseDaoClassName(){
+        String daoClass=getBaseDaoClass();
+        String[] values =StringUtils.split(daoClass, '.');
+        return values[values.length-1];
+    }
+    //---add by gaoll 
 
     /**
      * Gets the variable name.
@@ -260,11 +272,11 @@ public class IWalletTable extends JavaTable implements Comparable {
         return ibatisImports;
     }
 
-    public Set<String> getMyBatisImports() {
-        myBatisImports.addAll(this.daoImports);
-        myBatisImports.addAll(this.ibatisImports);
+    public Set<String> getDaoImplImports() {
+        daoImplImports.addAll(this.daoImports);
+        daoImplImports.addAll(this.ibatisImports);
 
-        return myBatisImports;
+        return daoImplImports;
     }
 
     /**

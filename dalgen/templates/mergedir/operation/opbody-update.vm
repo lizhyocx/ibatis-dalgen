@@ -33,5 +33,5 @@
 
 #end
 ## execute update and return
-        return getSqlMapClientTemplate().update(namespace+"${operation.mappedStatementId}", ${paramName});
+        return super.update(namespace+"${operation.mappedStatementId}", ${paramName});
     }

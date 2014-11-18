@@ -64,11 +64,11 @@
 								<fileproducer destination="${middlegen.destination}/java/${middlegen.package.dir}" template="${middlegen.templates}/daoImpl.vm" filename="dao/impl/{0}DaoImpl.java" />
 
 								<!-- 生成sqlMap-mapping -->
-								<fileproducer destination="${middlegen.destination}/resources" template="${middlegen.templates}/table-sqlmap-mapping.vm" filename="ibatis/mapping/{0}-sqlmap-mapping.xml" />
+								<fileproducer destination="${middlegen.destination}/resources" template="${middlegen.templates}/table-sqlmap-mapping.vm" filename="ibatis/mapping/{0}.xml" />
 
-								<!--生成sqlMap-->
+								<!--生成sqlMap
 								<fileproducer destination="${middlegen.destination}/resources" template="${middlegen.templates}/sqlmap.vm" filename="ibatis/sqlMapConfig.xml" />
-
+								-->
 				<!-- 生成DAO beans的Spring配置文件 -->
 				<!--<fileproducer destination="${middlegen.destination}/resources/META-INF/spring" template="${middlegen.templates}/beans-dal-dao.vm" filename="${app.name}-das-dao-auto.xml" />-->
 			</iwallet>

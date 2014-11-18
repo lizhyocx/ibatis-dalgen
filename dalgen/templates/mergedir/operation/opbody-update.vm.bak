@@ -2,7 +2,7 @@
 ## check parameters
 #if (${operation.paramType} == "object")
     	if (${operation.params.get(0).name} == null) {
-    		throw new IllegalArgumentException("Can't delete by a null data object.");
+    		throw new IllegalArgumentException("Can't update by a null data object.");
     	}
 
 #end
@@ -12,7 +12,7 @@
 
 #elseif (${operation.params.size()} == 1)
 #if (${operation.param.javaTypePrimitive})
-        ${operation.param.simpleJavaTypeForPrimitive} param = new ${operation.param.simpleJavaTypeForPrimitive}(${operation.param.name});
+        ${operation.param.simpleJavaTypeForPrimitive} param = new ${operation.param.simpleJavaTypeForPrimitive}(${table.namespace}.${operation.param.name});
 #set ($paramName = "param")
 
 #else
@@ -32,5 +32,6 @@
 #set ($paramName = "param")
 
 #end
-        return super.delete(namespace+"${operation.mappedStatementId}", ${paramName});
+## execute update and return
+        return getSqlMapClientTemplate().update(namespace+"${operation.mappedStatementId}", ${paramName});
     }

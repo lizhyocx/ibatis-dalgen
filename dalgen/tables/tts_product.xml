@@ -20,7 +20,7 @@
 	<operation name="getTest" resultMap="RM-TTS-PRODUCT_TEST">
 		<description>查询所有记录</description>
 		<sql>
-			SELECT * FROM tts_product
+			SELECT desc_ FROM tts_product
 		</sql>
 		<sqlmap>
 		<![CDATA[
@@ -29,7 +29,16 @@
 		</sqlmap>
 	</operation>
 
-
+	
+	<operation name="insert1">
+	<sql>
+	insert into tts_meizhuang
+	(id,pic_url,price,words,topIds,publish_time,publish_user_id,create_time)
+	values(?,?,?,?,?,?,?,?)
+	</sql>
+	
+	
+	</operation>
 	<operation name="insert">
 		<sql>
 			insert into tts_product

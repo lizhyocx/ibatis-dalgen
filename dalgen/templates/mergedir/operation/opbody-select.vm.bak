@@ -46,7 +46,7 @@
 #if (! ${operation.paging})
 #if (${operation.multiplicity} == "one")
 #if (${operation.returnTypePrimitive})
-	    ${operation.simpleReturnTypeForPrimitive} retObj = (${operation.simpleReturnTypeForPrimitive}) super.object(namespace+"${operation.mappedStatementId}", ${paramName});
+	    ${operation.simpleReturnTypeForPrimitive} retObj = (${operation.simpleReturnTypeForPrimitive}) getSqlMapClientTemplate().queryForObject(namespace+"${operation.mappedStatementId}", ${paramName});
 
 		if (retObj == null) {
 		    return ${operation.defaultReturnValue};
@@ -54,10 +54,10 @@
 		    return retObj.${operation.simpleReturnType}Value();
 		}
 #else
-        return (${operation.simpleReturnType}) super.object(namespace+"${operation.mappedStatementId}", ${paramName});
+        return (${operation.simpleReturnType}) getSqlMapClientTemplate().queryForObject(namespace+"${operation.mappedStatementId}", ${paramName});
 #end
 #else
-        return (${operation.simpleReturnType}) super.list(namespace+"${operation.mappedStatementId}", ${paramName});
+        return getSqlMapClientTemplate().queryForList(namespace+"${operation.mappedStatementId}", ${paramName});
 #end
 
 #else
