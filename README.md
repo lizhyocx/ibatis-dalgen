@@ -7,3 +7,6 @@ generate Dao.java
 		 DaoImpl.java
 		 Model.java
 		 Ibatis.xml
+
+		 
+modify on https://github.com/obullxl/atom-dalgen
