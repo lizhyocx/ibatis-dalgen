@@ -18,3 +18,10 @@
 /resources/howto/*.log
 
 /.externalToolBuilders/MyAntBuilder.launch
+
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
