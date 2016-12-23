@@ -144,7 +144,7 @@ public final class FileProducer {
 
     /**
      * Sets the Id attribute of the FileProducer object
-     * 
+     *
      * @param id
      *            The new Id value
      */
@@ -154,7 +154,7 @@ public final class FileProducer {
 
     /**
      * Sets the Destination attribute of the DefaultFileProducer object
-     * 
+     *
      * @param destinationDir
      *            The new Destination value
      */
@@ -164,7 +164,7 @@ public final class FileProducer {
 
     /**
      * Sets the FileName attribute of the DefaultFileProducer object
-     * 
+     *
      * @param destinationFileName
      *            The new FileName value
      */
@@ -174,7 +174,7 @@ public final class FileProducer {
 
     /**
      * Sets the Template attribute of the DefaultFileProducer object
-     * 
+     *
      * @param template
      *            The new Template value
      */
@@ -189,7 +189,7 @@ public final class FileProducer {
 
     /**
      * Gets the Id attribute of the FileProducer object
-     * 
+     *
      * @return The Id value
      */
     public String getId() {
@@ -198,7 +198,7 @@ public final class FileProducer {
 
     /**
      * Returns a copy of this FileProducer.
-     * 
+     *
      * @todo-javadoc Write javadocs for method parameter
      * @todo-javadoc Write javadocs for method parameter
      * @return a FileProducer with the *real* name
@@ -236,7 +236,7 @@ public final class FileProducer {
                 // Overriding an existing template
                 if (_destinationDir != null) {
                     String msg = "In fileproducer with id=\"" + getId() + "\", destination should *not* be specified. " + "The fileproducer is overriding an existing template in the plugin, "
-                                 + "but the plugin should still decide where to store the generated file. " + _destinationDir.getAbsolutePath();
+                            + "but the plugin should still decide where to store the generated file. " + _destinationDir.getAbsolutePath();
 
                     LogUtils.get().error(msg);
                     throw new IllegalStateException(msg);
@@ -244,7 +244,7 @@ public final class FileProducer {
 
                 if (_destinationFileName != null) {
                     String msg = "In fileproducer with id=\"" + getId() + "\", filename should *not* be specified. " + "The fileproducer is overriding an existing template in the plugin, "
-                                 + "but the plugin should still decide how to name the generated file. " + _destinationFileName;
+                            + "but the plugin should still decide how to name the generated file. " + _destinationFileName;
 
                     LogUtils.get().error(msg);
                     throw new IllegalStateException(msg);
@@ -272,7 +272,7 @@ public final class FileProducer {
 
     /**
      * Describe the method
-     * 
+     *
      * @todo-javadoc Describe the method
      * @todo-javadoc Describe the method parameter
      * @param tableElement
@@ -322,7 +322,7 @@ public final class FileProducer {
 
     /**
      * Describe what the method does
-     * 
+     *
      * @todo-javadoc Write javadocs for exception
      * @todo-javadoc Write javadocs for method
      * @todo-javadoc Write javadocs for method parameter
@@ -354,7 +354,7 @@ public final class FileProducer {
 
     /**
      * Sets the Template attribute of the DefaultFileProducer object
-     * 
+     *
      * @param template
      *            The new Template value
      */
@@ -364,7 +364,7 @@ public final class FileProducer {
 
     /**
      * Gets the ContextMap attribute of the FileProducer object
-     * 
+     *
      * @return The ContextMap value
      */
     public Map<Object, Object> getContextMap() {
@@ -373,7 +373,7 @@ public final class FileProducer {
 
     /**
      * Copies destination props from another instance
-     * 
+     *
      * @todo-javadoc Write javadocs for method parameter
      * @param other
      *            Describe what the parameter does
@@ -385,7 +385,7 @@ public final class FileProducer {
 
     /**
      * Describe what the method does
-     * 
+     *
      * @todo-javadoc Write javadocs for method
      * @todo-javadoc Write javadocs for method parameter
      * @todo-javadoc Write javadocs for return value
@@ -521,7 +521,7 @@ public final class FileProducer {
     /**
      * 为了防止sql注入漏洞增加的验证
      * <p>原理很简单直接判断生成后的文件中是否包含美元符($)，当然只对sqlmap-mapping进行判断
-     * 
+     *
      * @param tmpFile
      * @throws MiddlegenException
      */

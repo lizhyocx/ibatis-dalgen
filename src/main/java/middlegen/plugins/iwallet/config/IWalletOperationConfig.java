@@ -80,6 +80,9 @@ public class IWalletOperationConfig {
     /** operation description */
     private String                   description;
 
+    //added by lizhiyang 2016-12-22
+    private String                  insertReturnPK;
+
     /**
      * Constructor for IWalletOperationConfig.
      */
@@ -352,5 +355,13 @@ public class IWalletOperationConfig {
 
     public void setParameterClass(String parameterClass) {
         this.parameterClass = parameterClass;
+    }
+
+    public String getInsertReturnPK() {
+        return insertReturnPK;
+    }
+
+    public void setInsertReturnPK(String insertReturnPK) {
+        this.insertReturnPK = insertReturnPK;
     }
 }

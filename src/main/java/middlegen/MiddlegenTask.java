@@ -48,6 +48,8 @@ import com.atom.dalgen.ObjectFactory;
 import com.atom.dalgen.utils.CfgUtils;
 import com.atom.dalgen.utils.LogUtils;
 
+import static javafx.scene.input.KeyCode.J;
+
 /**
  * This Ant task is a thin wrapper around Middlegen that makes it possible to
  * fire up Middlegen (with or without gui) from Ant. The task also provides

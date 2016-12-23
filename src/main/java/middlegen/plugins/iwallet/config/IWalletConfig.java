@@ -184,6 +184,9 @@ public class IWalletConfig {
                 digester.addSetProperties("table/operation", "resultclass", "resultClass");
                 digester.addSetProperties("table/operation", "append", "append");
 
+                //add by lizhiyang 2016-12-22
+                digester.addSetProperties("table/operation", "insertReturnPK", "insertReturnPK");
+
                 digester.addObjectCreate("table/operation/extraparams/param", IWalletParamConfig.class);
                 digester.addSetProperties("table/operation/extraparams/param", "name", "name");
                 digester.addSetProperties("table/operation/extraparams/param", "javatype", "javaType");

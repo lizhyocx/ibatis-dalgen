@@ -69,6 +69,8 @@ public abstract class IWalletOperation extends PreferenceAware implements Operat
 
     protected String                 parameterClass;
 
+    protected String                 insertReturnPK;
+
     /**
      * Constructor for IWalletOperation.
      */
@@ -582,4 +584,11 @@ public abstract class IWalletOperation extends PreferenceAware implements Operat
         return getMappedStatementId(needAppName) + "-COUNT-FOR-PAGING";
     }
 
+    public String getInsertReturnPK() {
+        return insertReturnPK;
+    }
+
+    public void setInsertReturnPK(String insertReturnPK) {
+        this.insertReturnPK = insertReturnPK;
+    }
 }

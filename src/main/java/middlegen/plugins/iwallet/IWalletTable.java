@@ -4,44 +4,25 @@
  */
 package middlegen.plugins.iwallet;
 
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import Zql.ZDelete;
+import Zql.ZInsert;
+import Zql.ZQuery;
+import Zql.ZUpdate;
+import com.atom.dalgen.utils.CfgUtils;
+import com.atom.dalgen.utils.LogUtils;
 import middlegen.Column;
 import middlegen.Plugin;
 import middlegen.Table;
 import middlegen.Util;
 import middlegen.javax.JavaPlugin;
 import middlegen.javax.JavaTable;
-import middlegen.plugins.iwallet.config.CopyConfig;
-import middlegen.plugins.iwallet.config.IWalletConfig;
-import middlegen.plugins.iwallet.config.IWalletConfigException;
-import middlegen.plugins.iwallet.config.IWalletOperationConfig;
-import middlegen.plugins.iwallet.config.IWalletResultMapConfig;
-import middlegen.plugins.iwallet.config.IWalletSqlConfig;
-import middlegen.plugins.iwallet.config.IWalletTableConfig;
-import middlegen.plugins.iwallet.operation.IWalletDelete;
-import middlegen.plugins.iwallet.operation.IWalletInsert;
-import middlegen.plugins.iwallet.operation.IWalletSelect;
-import middlegen.plugins.iwallet.operation.IWalletUnknown;
-import middlegen.plugins.iwallet.operation.IWalletUpdate;
+import middlegen.plugins.iwallet.config.*;
+import middlegen.plugins.iwallet.operation.*;
 import middlegen.plugins.iwallet.util.DalUtil;
-
 import org.apache.commons.lang.StringUtils;
 
-import Zql.ZDelete;
-import Zql.ZInsert;
-import Zql.ZQuery;
-import Zql.ZUpdate;
-
-import com.atom.dalgen.utils.CfgUtils;
-import com.atom.dalgen.utils.LogUtils;
+import java.text.MessageFormat;
+import java.util.*;
 
 /**
  * A table decorator relates a database table and a set of dal sources.
@@ -378,7 +359,6 @@ public class IWalletTable extends JavaTable implements Comparable {
             op.setPlugin(getPlugin());
 
             op.setTable(this);
-
             operations.add(op);
         }
     }

@@ -16,6 +16,8 @@ import org.apache.commons.lang.StringUtils;
 
 import com.atom.dalgen.utils.LogUtils;
 
+import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
+
 /**
  * An implementation of insert operation decorator.
  *
@@ -36,11 +38,12 @@ public class IWalletInsert extends IWalletOperation {
     public IWalletInsert(IWalletOperationConfig opConfig) {
 
         super(opConfig);
-
         //向下兼容，当没有配置机密性及完整性时，不进行SQL拼接
         if ((opConfig.getTableConfig().getConfidentiality() != null) || (opConfig.getTableConfig().getIntegrity() != null)) {
             getFinalSql(opConfig);
         }
+
+        insertReturnPK = opConfig.getInsertReturnPK();
 
         paramType = PARAM_TYPE_OBJECT;
 
